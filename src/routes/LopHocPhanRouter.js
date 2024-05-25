@@ -18,6 +18,10 @@ routes.get('/getListLopHocPhanByMaMonHoc/:maMonHoc', lopHocPhanController.getLis
 
 // thêm sinh viên vào lớp học phần
 //[POST] http://localhost:3001/api/lophocphan/addSinhVien
+// {
+//     "maSV":"20000002",
+//     "maLopHocPhan":"LHP05"
+//   }
 routes.post('/addSinhVien', lopHocPhanController.addSinhVien);
 
 // show list lớp học phần theo mã sinh viên

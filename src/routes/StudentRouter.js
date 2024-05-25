@@ -9,7 +9,7 @@ const userController = require('../controllers/StudentController');
 //     "noiSinh":"Bệnh viện Vĩnh Long", "lop":"DHKTPM16A", 
 //     "nganh":"Kĩ thuật phần mềm", "khoaHoc":"2020-2021", 
 //     "bacDaoTao":"Đại học", "loaiHinhDaoTao":"Chính quy",
-//     "password":"20000001"
+//     "password":"20000001", "avatar":""
 // }
 routes.post('/createUser', userController.createUser);
 //[POST] http://localhost:3001/api/user/loginUser

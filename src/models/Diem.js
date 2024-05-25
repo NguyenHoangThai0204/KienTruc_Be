@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
 const diemSchema = new mongoose.Schema(
     {
@@ -16,6 +16,10 @@ const diemSchema = new mongoose.Schema(
             type: String,
             required: true,
             trim: true,
+        },
+        soTC: {
+            type: Number,
+            required: true,
         },
         diemLT: {
             type: [],
@@ -53,9 +57,11 @@ const diemSchema = new mongoose.Schema(
             type: Boolean,
             required: true,
         },
+        
     },
     { timestamps: true }
     );
 
 const Diem = mongoose.model('Diem', diemSchema);
+
 module.exports = Diem;
